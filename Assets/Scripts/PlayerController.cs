@@ -7,18 +7,18 @@ public class PlayerController : MonoBehaviour
     [Range(1f, 50f)]
     [SerializeField] private float _rayMaxDistance = 20f;
 
-    [SerializeField] LayerMask _groundLayer;
+    [SerializeField] LayerMask _groundLayer, whatIsPlayer;
 
     private Camera _mainCamera;
     private NavMeshAgent _agent;
 
+    private bool isChickenInRange;
 
     void Start()
     {
         _mainCamera = Camera.main;
         _agent = GetComponent<NavMeshAgent>();
     }
-
 
     void Update()
     {

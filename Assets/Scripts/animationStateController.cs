@@ -18,6 +18,12 @@ public class animationStateController : MonoBehaviour
         StartCoroutine(CalcSpeed());
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            anim.SetBool("isAttacking", true);
+    }
+
     IEnumerator CalcSpeed()
     {
         bool isPlaying = true;
@@ -35,9 +41,6 @@ public class animationStateController : MonoBehaviour
             else
                 anim.SetBool("isWalking", false);
             anim.SetFloat("speed", playerSpeed);
-
-            if (Input.GetMouseButtonDown(0))
-                anim.SetBool("isAttacking", true);
         }
     }
     public void EndAttack()

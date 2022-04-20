@@ -5,9 +5,7 @@ using UnityEngine.AI;
 public class Ennemi : MonoBehaviour
 {
     public NavMeshAgent agent;
-
     public Transform player;
-
     public Animator anim;
 
     public LayerMask whatIsGround, whatIsPlayer;
@@ -96,7 +94,7 @@ public class Ennemi : MonoBehaviour
 
     private void AttackPlayer()
     {
-        // Set  animations
+/*        // Set  animations
         ResetAnimations();
         anim.SetBool("Eat", true);
 
@@ -116,7 +114,8 @@ public class Ennemi : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
-    }
+*/    }
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
