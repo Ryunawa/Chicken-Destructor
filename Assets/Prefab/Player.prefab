@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 2066896392038628118, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_Name
-      value: DogPolyart Variant
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6143064903222077765, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
@@ -87,7 +87,8 @@ PrefabInstance:
       propertyPath: _rayMaxDistance
       value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6926599026472673624, guid: 45288819fde2143449a96207b14db0bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 45288819fde2143449a96207b14db0bb, type: 3}
 --- !u!1 &229629648802609637 stripped
 GameObject:
