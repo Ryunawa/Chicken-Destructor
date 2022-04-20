@@ -364,7 +364,8 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 0.5
-  projectile: {fileID: 7815763264724474296, guid: ae20a5fdfcba28f4f99023b3ae513708, type: 3}
+  projectile: {fileID: 7815763264724474296, guid: ae20a5fdfcba28f4f99023b3ae513708,
+    type: 3}
   sightRange: 5
   attackRange: 2
   playerInSightRange: 0
@@ -863,7 +864,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 387be1c6632239e4abe0977be30e1baa, type: 2}
+  - {fileID: 2100000, guid: e41f42f5e81b018479b0091156c9ecc6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
