@@ -1251,7 +1251,7 @@ PrefabInstance:
     - target: {fileID: 8583735942345714417, guid: 3cf96d75381e759428ca32f6f8d5ac48,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8583735942345714417, guid: 3cf96d75381e759428ca32f6f8d5ac48,
         type: 3}
@@ -1316,7 +1316,7 @@ PrefabInstance:
     - target: {fileID: 8583735942345714418, guid: 3cf96d75381e759428ca32f6f8d5ac48,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 2.278607
+      value: 2.3398058
       objectReference: {fileID: 0}
     - target: {fileID: 8583735942345714419, guid: 3cf96d75381e759428ca32f6f8d5ac48,
         type: 3}
@@ -1430,7 +1430,7 @@ PrefabInstance:
     - target: {fileID: 8435715524274133973, guid: 87fa34eecaa611a4d966575a1cc743f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8435715524274133973, guid: 87fa34eecaa611a4d966575a1cc743f7,
         type: 3}
@@ -2279,7 +2279,8 @@ PrefabInstance:
       propertyPath: whatIsPlayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 9e054d95391ee9d4eb41be3b658493a3, type: 3}
 --- !u!4 &1450994960 stripped
 Transform:
@@ -2467,7 +2468,7 @@ PrefabInstance:
     - target: {fileID: 1953013275949643050, guid: 98fa764b3188c3a4098f4379e79a8080,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1953013275949643050, guid: 98fa764b3188c3a4098f4379e79a8080,
         type: 3}
@@ -2740,7 +2741,7 @@ PrefabInstance:
     - target: {fileID: 229629648802243973, guid: 4fd5af3f69539994cb2ce44c8a8aadab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 229629648802243973, guid: 4fd5af3f69539994cb2ce44c8a8aadab,
         type: 3}
