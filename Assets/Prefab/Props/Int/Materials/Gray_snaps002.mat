@@ -38,6 +38,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Base_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -96,6 +100,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_1D9A2AE: 0.02
+    - Vector1_EFE64959: 10
+    - Vector1_FEFF47F1: 0.2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -105,6 +112,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Distance: 5
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FirstCircleRadius: 8
@@ -113,6 +121,7 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
+    - _NoiseAmplitude: 1.22
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -127,7 +136,9 @@ Material:
     - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _test: 0
     m_Colors:
+    - Color_6DF76E71: {r: 0.17123538, g: 0.85270315, b: 2.7924528, a: 1}
     - _BaseColor: {r: 0.49803913, g: 0.49803913, b: 0.49803913, a: 1}
     - _Color: {r: 0.49803907, g: 0.49803907, b: 0.49803907, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
