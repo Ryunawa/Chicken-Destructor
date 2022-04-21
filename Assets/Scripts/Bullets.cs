@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullets : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     public int damage;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class Bullets : MonoBehaviour
         //SelfDestroy();
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player)
         {
@@ -27,17 +27,4 @@ public class Bullets : MonoBehaviour
         }
         Destroy(gameObject, 3);
     }
-
-    /*IEnumerator SelfDestroy()
-    {
-        float duration = 3f;
-        float totalTime = 0;
-
-        if (totalTime <= duration)
-        {
-            Destroy(gameObject);
-
-            yield return null;
-        }
-    }*/
 }
