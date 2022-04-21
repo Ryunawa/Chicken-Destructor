@@ -11,32 +11,23 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPause)
-            {
                 Resume();
-            }
             else
-            {
                 Pause();
-            }
-            Debug.Log("Escape");
         }
-
         if (Input.GetKeyDown(KeyCode.P) && GameIsPause)
         {
-            Debug.Log("Enter");
             // save any game data here
             #if UNITY_EDITOR
             // Application.Quit() does not work in the editor so
             // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
-                UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
             #else
-                Application.Quit();
+            Application.Quit();
             #endif
-                Application.Quit();
         }
     }
 
@@ -47,12 +38,10 @@ public class PauseMenu : MonoBehaviour
         GameIsPause = false;
     }
 
-
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPause = true;
     }
-
 }
