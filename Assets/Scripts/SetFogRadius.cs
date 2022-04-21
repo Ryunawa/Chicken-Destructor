@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SetFogRadius : MonoBehaviour
 {
-    private float _firstCircleRadius = 8;
-    private float _SecondCircleRadius = 5;
+    private float _firstCircleRadius = 5;
+    private float _SecondCircleRadius = 0;
     
     // Start is called before the first frame update
     void Start()
