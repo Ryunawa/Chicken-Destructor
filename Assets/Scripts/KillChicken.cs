@@ -5,10 +5,13 @@ using UnityEngine;
 public class KillChicken : MonoBehaviour
 {
     public GameObject gameManager;
+    public float radius;
 
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager");
+        radius = Shader.GetGlobalFloat("_FirstCircleRadius");
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -17,6 +20,9 @@ public class KillChicken : MonoBehaviour
         {
             gameManager.GetComponent<VictoryDefeat>().DecrementChicken();
             Destroy(other.gameObject, 0.2f);
+            radius = Shader.GetGlobalFloat("_FirstCircleRadius");
+            radius++;
+            Shader.SetGlobalFloat("_FirstCircleRadius", radius);
         }
     }
 }
