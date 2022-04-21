@@ -10,11 +10,10 @@ public class Bullets : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player");
-        damage = 1;
     }
     private void Start()
     {
-        //SelfDestroy();
+        damage = 1;
     }
 
     private void OnCollisionEnter(Collision other)

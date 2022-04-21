@@ -5,8 +5,14 @@ using UnityEngine;
 public class PlayerBehaviour : MonoBehaviour
 {
     public VictoryDefeat VictoryScript;
+    public GameObject gameUI;
     private float _maxHealth;
     public float health;
+
+    private void Awake()
+    {
+        gameUI = GameObject.Find("GameInterface");
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -24,6 +30,8 @@ public class PlayerBehaviour : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        gameUI.GetComponent<GameUI>().SetHealthBar(health);
+
         Debug.Log("Health reduce");
 
         if (health <= 0)

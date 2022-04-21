@@ -1,23 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class VictoryDefeat : MonoBehaviour
 {
-    public int ChickenMax;
-    public int ChickenRemaining;
+    public int chickenMax;
+    public int chickenRemaining;
+    public GameObject gameUI;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        gameUI = GameObject.Find("GameInterface");
+    }
+
     void Start()
     {
-        ChickenMax = 20;
-        ChickenRemaining = ChickenMax;
+        GameObject[] chickens = GameObject.FindGameObjectsWithTag("Chicken");
+
+        chickenMax = chickens.Count();
+        chickenRemaining = chickenMax;
+
+        gameUI.GetComponent<GameUI>().SetCounterChicken(chickenRemaining);
+        gameUI.GetComponent<GameUI>().SetMaxChicken(chickenMax);
     }
 
     public void DecrementChicken()
     {
-        ChickenRemaining--;
-        if (ChickenRemaining <= 0)
+        chickenRemaining--;
+        gameUI.GetComponent<GameUI>().SetCounterChicken(chickenRemaining);
+
+        if (chickenRemaining <= 0)
         {
             Victory();
         }
@@ -30,7 +43,7 @@ public class VictoryDefeat : MonoBehaviour
 
     public void Defeat()
     {
-        print("Congrats ! You killed all the chickens ! But... why ?");
+        print("You lost Robinou");
     }
 
 }
