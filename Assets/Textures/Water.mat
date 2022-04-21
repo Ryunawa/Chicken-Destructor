@@ -54,7 +54,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RippleDensity: 17
+    - _RippleDensity: 30
     - _RipplePower: 5
     - _RippleSpeed: 2
     - _WaveSpeed: 0.5
