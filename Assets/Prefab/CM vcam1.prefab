@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8583735940694594807}
   - component: {fileID: 8583735940694594804}
-  - component: {fileID: 8583735940694594806}
+  - component: {fileID: 1701045338}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8583735940694594806
+--- !u!114 &1701045338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_CameraDistance: 10
+  m_CameraDistance: 15
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
@@ -112,7 +112,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8583735942345714419}
-  m_LocalRotation: {x: 0.2694114, y: -0.000000023906672, z: 0.0000000066880186, w: 0.9630252}
+  m_LocalRotation: {x: 0.26941568, y: 0, z: 0, w: 0.963024}
   m_LocalPosition: {x: 4.163527, y: 6.159, z: -4.4300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -120,7 +120,7 @@ Transform:
   - {fileID: 8583735940694594807}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.259, y: 0, z: 0}
 --- !u!114 &8583735942345714418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0324676, y: 1}
+    m_SensorSize: {x: 2.3236716, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

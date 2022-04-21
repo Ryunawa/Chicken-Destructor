@@ -43,13 +43,11 @@ public class VictoryDefeat : MonoBehaviour
 
     public void Victory()
     {
-        Time.timeScale = 0f;
         victoryUI.SetActive(true);
     }
 
     public void Defeat()
     {
-        Time.timeScale = 0f;
         defeatUI.SetActive(true);
     }
 

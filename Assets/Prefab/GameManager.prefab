@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3492105850767001595}
   - component: {fileID: 3492105850767001594}
+  - component: {fileID: 6901585548600478400}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,3 +48,17 @@ MonoBehaviour:
   chickenMax: 0
   chickenRemaining: 0
   gameUI: {fileID: 0}
+  victoryUI: {fileID: 0}
+  defeatUI: {fileID: 0}
+--- !u!114 &6901585548600478400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492105850767001597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c6f4e2ddb6d40469b91c59566f26fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
