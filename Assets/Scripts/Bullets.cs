@@ -13,7 +13,7 @@ public class Bullets : MonoBehaviour
     }
     private void Start()
     {
-        damage = 1;
+        damage = 2;
     }
 
     private void OnTriggerEnter(Collider other)

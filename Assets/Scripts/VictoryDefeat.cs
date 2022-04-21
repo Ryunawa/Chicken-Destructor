@@ -44,11 +44,13 @@ public class VictoryDefeat : MonoBehaviour
     public void Victory()
     {
         victoryUI.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void Defeat()
     {
         defeatUI.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void RestartButton()
