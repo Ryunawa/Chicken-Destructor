@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ExampleAssets/BigRookGames/Nature Pack/HDRP URP/Import for HDRP.unitypackage.meta
 guid: b30f29d87ec3e9b47ad601817931e7b7
+========
+guid: 6ba0e2ddb9c7638489025dfc710efa40
+>>>>>>>> Robin:Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
