@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    
+    public VictoryDefeat VictoryScript;
     private float _maxHealth;
     public float health;
 
@@ -28,7 +28,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (health <= 0)
         {
-            print("T'as perdu Robinou");
+            VictoryScript.Defeat();
         }
     }
     
