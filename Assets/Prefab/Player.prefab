@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 962643835384110833}
   - component: {fileID: 7241964075307698973}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,6 +177,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2066896392038628118, guid: 45288819fde2143449a96207b14db0bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066896392038628118, guid: 45288819fde2143449a96207b14db0bb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6143064903222077765, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_Speed
@@ -197,7 +207,8 @@ PrefabInstance:
       propertyPath: _rayMaxDistance
       value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6926599026472673624, guid: 45288819fde2143449a96207b14db0bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 45288819fde2143449a96207b14db0bb, type: 3}
 --- !u!4 &229629648802243973 stripped
 Transform:

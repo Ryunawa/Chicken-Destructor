@@ -6,13 +6,10 @@ public class KillChicken : MonoBehaviour
 {
     private void OnTriggerStay(Collider other)
     {
-        if (!other.CompareTag("Chicken"))
-            return;
-
-        if (Input.GetMouseButtonDown(0))
+        if (other.CompareTag("Chicken") && Input.GetMouseButtonDown(0))
         {
             Destroy(other.gameObject, 0.2f);
+            Debug.Log("Ca compte quand meme que pour un !");
         }
-        Debug.Log("OK !");
     }
 }

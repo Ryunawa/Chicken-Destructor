@@ -28,7 +28,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (health <= 0)
         {
-            print("T'as perdu Jérôme");
+            print("T'as perdu Robinou");
         }
     }
     
