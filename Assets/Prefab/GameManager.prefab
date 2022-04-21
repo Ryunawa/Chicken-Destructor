@@ -47,3 +47,5 @@ MonoBehaviour:
   chickenMax: 0
   chickenRemaining: 0
   gameUI: {fileID: 0}
+  victoryUI: {fileID: 0}
+  defeatUI: {fileID: 0}

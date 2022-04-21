@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1b6efcec381d7499980298b674d014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VictoryScript: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1001 &2270053509455495923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -126,17 +126,17 @@ PrefabInstance:
     - target: {fileID: 2066896392038131574, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.1434555
+      value: -5.14
       objectReference: {fileID: 0}
     - target: {fileID: 2066896392038131574, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 2066896392038131574, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.5
+      value: 18.13
       objectReference: {fileID: 0}
     - target: {fileID: 2066896392038131574, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
@@ -188,10 +188,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2872895605460718746, guid: 45288819fde2143449a96207b14db0bb,
+        type: 3}
+      propertyPath: playerSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6143064903222077765, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
       propertyPath: m_Speed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6143064903222077765, guid: 45288819fde2143449a96207b14db0bb,
         type: 3}
