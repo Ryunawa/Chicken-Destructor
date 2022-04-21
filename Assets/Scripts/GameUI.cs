@@ -17,7 +17,6 @@ public class GameUI : MonoBehaviour
     public void SetCounterChicken(int count)
     {
         chickenRemaining.GetComponent<Text>().text = "" + count;
-        Debug.Log("Did it");
     }
     public void SetMaxChicken(int max)
     {

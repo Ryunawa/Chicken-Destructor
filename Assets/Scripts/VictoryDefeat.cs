@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class VictoryDefeat : MonoBehaviour
@@ -8,10 +9,14 @@ public class VictoryDefeat : MonoBehaviour
     public int chickenMax;
     public int chickenRemaining;
     public GameObject gameUI;
+    public GameObject victoryUI;
+    public GameObject defeatUI;
 
     private void Awake()
     {
         gameUI = GameObject.Find("GameInterface");
+        //defeatUI = GameObject.Find("GameOver");
+        //victoryUI = GameObject.Find("Victory"); 
     }
 
     void Start()
@@ -38,12 +43,28 @@ public class VictoryDefeat : MonoBehaviour
 
     public void Victory()
     {
-        print("Congrats ! You killed all the chickens ! But... why ?");
+        Time.timeScale = 0f;
+        victoryUI.SetActive(true);
     }
 
     public void Defeat()
     {
-        print("You lost Robinou");
+        Time.timeScale = 0f;
+        defeatUI.SetActive(true);
+    }
+
+    public void RestartButton()
+    {
+        SceneManager.LoadScene("Jerome");
+    }
+
+    public void ExitButton()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 
 }
