@@ -5,10 +5,12 @@ using UnityEngine;
 public class KillChicken : MonoBehaviour
 {
     public GameObject gameManager;
+    public GameObject dummy;
 
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager");
+        dummy = GameObject.Find("Dummy");
     }
 
     private void OnTriggerStay(Collider other)
@@ -17,6 +19,11 @@ public class KillChicken : MonoBehaviour
         {
             gameManager.GetComponent<VictoryDefeat>().DecrementChicken();
             Destroy(other.gameObject, 0.2f);
+        }
+
+        if (other.CompareTag("Dummy") && Input.GetMouseButtonDown(0))
+        {
+            dummy.GetComponent<Dummy>().TakeDamage();
         }
     }
 }

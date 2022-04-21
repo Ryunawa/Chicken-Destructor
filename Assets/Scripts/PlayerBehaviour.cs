@@ -32,8 +32,6 @@ public class PlayerBehaviour : MonoBehaviour
         health -= damage;
         gameUI.GetComponent<GameUI>().SetHealthBar(health);
 
-        Debug.Log("Health reduce");
-
         if (health <= 0)
         {
             VictoryScript.Defeat();

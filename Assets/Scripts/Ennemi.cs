@@ -50,7 +50,6 @@ public class Ennemi : MonoBehaviour
             AttackPlayer();
         }
     }
-
     private void Patroling()
     {
         // Set  animations
@@ -113,7 +112,6 @@ public class Ennemi : MonoBehaviour
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
-
     private void ResetAttack()
     {
         alreadyAttacked = false;
