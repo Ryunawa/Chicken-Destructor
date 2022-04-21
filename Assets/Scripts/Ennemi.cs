@@ -10,8 +10,6 @@ public class Ennemi : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float health;
-
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -125,18 +123,6 @@ public class Ennemi : MonoBehaviour
         anim.SetBool("Eat", false);
         anim.SetBool("Walk", false);
         anim.SetBool("Run", false);
-    }
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-
-    private void DestroyEnemy()
-    {
-        Destroy(gameObject);
     }
 
     // Debug
