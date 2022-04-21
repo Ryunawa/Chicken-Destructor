@@ -21,15 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Machine Blue_snaps002
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 475a471294985994a90fc74d0e68d7c4,
+    type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -56,6 +56,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GameobjectTexture:
+        m_Texture: {fileID: 2800000, guid: bd99159b4a4f7e4458f1fcc4e222859b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -103,6 +107,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _FirstCircleRadius: 8
     - _GlossMapScale: 1
     - _Glossiness: 0.54
     - _GlossyReflections: 1
@@ -110,8 +115,10 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _SecondCercleRadius: 5
     - _Smoothness: 0.54
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -124,5 +131,6 @@ Material:
     - _BaseColor: {r: 0.05514632, g: 0.23356095, b: 0.399, a: 1}
     - _Color: {r: 0.0551463, g: 0.23356092, b: 0.39899996, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Grey: {r: 0.32075468, g: 0.32075468, b: 0.32075468, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
