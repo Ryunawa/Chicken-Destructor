@@ -42,6 +42,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 0cd681d52de2eb94893ceb676ab178f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Base_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _GameobjectTexture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -64,6 +68,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_1D9A2AE: 0.01
+    - Vector1_EFE64959: 30
+    - Vector1_FEFF47F1: 0
     - _FirstCircleRadius: 8
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -71,6 +78,7 @@ Material:
     - _WindDensity: 0.5
     - _WindStrenght: 0.1
     m_Colors:
+    - Color_6DF76E71: {r: 0, g: 5.145098, b: 16, a: 0}
     - _Grey: {r: 0.32075468, g: 0.32075468, b: 0.32075468, a: 1}
     - _WindMovement: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
