@@ -15,8 +15,6 @@ public class VictoryDefeat : MonoBehaviour
     private void Awake()
     {
         gameUI = GameObject.Find("GameInterface");
-        //defeatUI = GameObject.Find("GameOver");
-        //victoryUI = GameObject.Find("Victory"); 
     }
 
     void Start()
@@ -55,7 +53,8 @@ public class VictoryDefeat : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("Jerome");
+        SceneManager.LoadScene("MainMap");
+        Time.timeScale = 1;
     }
 
     public void ExitButton()

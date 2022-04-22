@@ -23087,6 +23087,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8826926892226643006, guid: 1cd876607f07efd4396cf714aa4706a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8826926892269065554, guid: 1cd876607f07efd4396cf714aa4706a3,
         type: 3}
       propertyPath: m_Name
@@ -23196,6 +23201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8826926892269065583, guid: 1cd876607f07efd4396cf714aa4706a3,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cd876607f07efd4396cf714aa4706a3, type: 3}

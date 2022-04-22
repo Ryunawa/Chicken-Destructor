@@ -8,6 +8,8 @@ public class Ennemi : MonoBehaviour
     public Transform player;
     public Animator anim;
 
+    public bool _isInRange;
+
     public LayerMask whatIsGround, whatIsPlayer;
 
     //Patroling
@@ -29,6 +31,11 @@ public class Ennemi : MonoBehaviour
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         anim = gameObject.GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        _isInRange = false;
     }
 
     private void Update()
